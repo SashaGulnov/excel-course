@@ -1,0 +1,21 @@
+@import "variables";
+@import "mixins";
+
+.toolbar{
+  height: 40px;
+  display: flex;
+  border: 1px solid $border-color;
+  border-left: none;
+  border-right: none;
+
+
+  &__buttons{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  &__button{
+    @include button(red)
+  }
+}
